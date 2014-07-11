@@ -1,3 +1,5 @@
 class people::jszod {
-   notify { 'hello jszod': }
+   notify { 'class people::jszod declared': }
+
+   include appcleaner
 }

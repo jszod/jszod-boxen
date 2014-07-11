@@ -1,4 +1,4 @@
 # Global variables
 
 # Set the ruby version
-ruby::global::version "2.1.0"
+ruby::global::version: "2.1.1"

@@ -61,3 +61,7 @@ github "xquartz",     "1.1.1"
 # https://github.com/boxen.
 
 github "appcleaner",  "1.0.0"
+github "hipchat",     "1.1.3"
+github "skype",       "1.0.8"
+github "omnigraffle", "1.3.0"
+

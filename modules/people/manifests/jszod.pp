@@ -29,10 +29,22 @@ class people::jszod {
     source => "${::github_login}/dotfiles"
   }
 
-  file { "${home}/.vimrc":
+  file { "${home}/.vim":
     ensure  => link,
-    target  => "${dotfiles_dir}/.vimrc",
+    force   => true,   # Overwrite if the directory alread exists
+    backup  => false,  # Don't backup directory if it alread exists, just replace it
+    target  => "${dotfiles_dir}/vim",
     require => Repository[$dotfiles_dir]
   }
 
+  file { "${home}/.vimrc":
+    ensure  => link,
+    target  => "${dotfiles_dir}/vimrc",
+    require => Repository[$dotfiles_dir]
+  }
+
+  # Install vim plugins using Vundle pacakge manager
+  exec { "install_vim_plugins_with_vundle":
+    command => "vim +PluginInstall +qall"
+  }
 }

@@ -29,7 +29,7 @@ class people::jszod {
     content => '2.1.1',
   }
 
-  # Ensure bundler gem is installed for my defautl ruby
+  # bundler gem is installed for my defautl ruby
   $version = '2.1.1'
   ruby_gem { "bundler for ${version}":
     gem           => 'bundler',
@@ -37,12 +37,26 @@ class people::jszod {
     ruby_version  => $version,
   }
 
-  # Ensure bundler gem is installed for all ruby versions
+  # bundler gem is installed for all ruby versions
   ruby_gem { 'bundler for all rubies':
     gem           => 'bundler',
     version       => '~> 1.0',
     ruby_version  => '*',
   }
+
+  # tmuxinator gem is installed
+  ruby_gem {"tmuxinator for ${version}":
+    gem           => 'tmuxinator',
+    version       => '~> 0.6.8',
+    ruby_version  => $version,
+  }
+
+  ruby_gem {"tmuxinator for all versions}":
+    gem           => 'tmuxinator',
+    version       => '~> 0.6.8',
+    ruby_version  => '*',
+  }
+
 
   # .dotfile configuration
   # ----------------------------------------------

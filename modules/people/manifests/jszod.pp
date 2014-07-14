@@ -45,13 +45,13 @@ class people::jszod {
   }
 
   # tmuxinator gem is installed
-  ruby_gem {"tmuxinator for ${version}":
+  ruby_gem { "tmuxinator for ${version}":
     gem           => 'tmuxinator',
     version       => '~> 0.6.8',
     ruby_version  => $version,
   }
 
-  ruby_gem {"tmuxinator for all versions}":
+  ruby_gem { 'tmuxinator for all versions':
     gem           => 'tmuxinator',
     version       => '~> 0.6.8',
     ruby_version  => '*',
@@ -62,6 +62,12 @@ class people::jszod {
   # ----------------------------------------------
   repository { $dotfiles_dir:
     source => "${::github_login}/dotfiles"
+  }
+
+  file { "${home}/.bashrc":
+    ensure  => link,
+    target  => "${dotfiles_dir}/bashrc",
+    require => Repository[$dotfiles_dir]
   }
 
   file { "${home}/.vim":
@@ -79,14 +85,25 @@ class people::jszod {
   }
 
   # Install vim plugins using Vundle pacakge manager
+  #  Need the .vim directory to be in place before this can occur
   exec { 'install_vim_plugins_with_vundle':
-    command => 'vim +PluginInstall +qall'
+    command => 'vim +PluginInstall +qall',
+    require => File["${home}/.vim"]
   }
 
   # tmux
   file { "${home}/.tmux.conf":
     ensure  => link,
     target  => "${dotfiles_dir}/tmux.conf",
+    require => Repository[$dotfiles_dir]
+  }
+
+  # tmuxinator
+  file { "${home}/.tmuxinator":
+    ensure  => link,
+    force   => true,
+    backup  => false,
+    target  => "${dotfiles_dir}/tmuxinator}",
     require => Repository[$dotfiles_dir]
   }
 

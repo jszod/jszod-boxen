@@ -65,3 +65,8 @@ github "hipchat",     "1.1.3"
 github "skype",       "1.0.8"
 github "omnigraffle", "1.3.0"
 github "macvim",      "1.0.0"
+github "tmux",        "1.0.2"
+github "sourcetree",  "1.0.0"
+
+# jszod/puppet-*
+github "xmind",       "1.0.0", :repo => "jszod/puppet-xmind"

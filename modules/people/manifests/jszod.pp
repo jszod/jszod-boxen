@@ -1,4 +1,5 @@
 # Customizations for jszod
+#
 class people::jszod {
   notify { 'class people::jszod declared': }
 
@@ -13,14 +14,34 @@ class people::jszod {
   include skype
 ##  include omnigraffle
   include macvim
+  include tmux
+  include xmind
+  include sourcetree
+
+  # Ruby configuration
+  # ---------------------------------------------
 
   # Specify the global ruby version
-  # ----------------------------------------------
   # Somehow setting the ruby::global::version varialbe in hiera does not work
   # Set the value explicitly in a file to mimic the 'rbenv global' command
   file { 'version':
     path    => '/opt/boxen/rbenv/version',
     content => '2.1.1',
+  }
+
+  # Ensure bundler gem is installed for my defautl ruby
+  $version = '2.1.1'
+  ruby_gem { "bundler for ${version}":
+    gem           => 'bundler',
+    version       => '~> 1.2.0',
+    ruby_version  => $version,
+  }
+
+  # Ensure bundler gem is installed for all ruby versions
+  ruby_gem { 'bundler for all rubies':
+    gem           => 'bundler',
+    version       => '~> 1.0',
+    ruby_version  => '*',
   }
 
   # .dotfile configuration
@@ -32,7 +53,7 @@ class people::jszod {
   file { "${home}/.vim":
     ensure  => link,
     force   => true,   # Overwrite if the directory alread exists
-    backup  => false,  # Don't backup directory if it alread exists, just replace it
+    backup  => false,  # Don't backup directory if it already exists
     target  => "${dotfiles_dir}/vim",
     require => Repository[$dotfiles_dir]
   }
@@ -44,7 +65,15 @@ class people::jszod {
   }
 
   # Install vim plugins using Vundle pacakge manager
-  exec { "install_vim_plugins_with_vundle":
-    command => "vim +PluginInstall +qall"
+  exec { 'install_vim_plugins_with_vundle':
+    command => 'vim +PluginInstall +qall'
   }
+
+  # tmux
+  file { "${home}/.tmux.conf":
+    ensure  => link,
+    target  => "${dotfiles_dir}/tmux.conf",
+    require => Repository[$dotfiles_dir]
+  }
+
 }

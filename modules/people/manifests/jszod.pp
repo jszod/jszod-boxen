@@ -15,8 +15,11 @@ class people::jszod {
 ##  include omnigraffle
   include macvim
   include tmux
+  include java
   include xmind
   include sourcetree
+  include sublime_text
+  include iterm2::stable
 
   # Ruby configuration
   # ---------------------------------------------
@@ -64,7 +67,13 @@ class people::jszod {
     source => "${::github_login}/dotfiles"
   }
 
-  file { "${home}/.bashrc":
+ file { "${home}/.bash_profile":
+    ensure  => link,
+    target  => "${dotfiles_dir}/bash_profile",
+    require => Repository[$dotfiles_dir]
+  }
+
+ file { "${home}/.bashrc":
     ensure  => link,
     target  => "${dotfiles_dir}/bashrc",
     require => Repository[$dotfiles_dir]

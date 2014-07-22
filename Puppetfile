@@ -2,8 +2,7 @@
 #
 # It works a lot like Bundler. We provide some core modules by
 # default. This ensures at least the ability to construct a basic
-# environment.
-
+# environment.  
 # Shortcut for a module from GitHub's boxen organization
 def github(name, *args)
   options ||= if args.last.is_a? Hash
@@ -60,13 +59,16 @@ github "xquartz",     "1.1.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-github "appcleaner",  "1.0.0"
-github "hipchat",     "1.1.3"
-github "skype",       "1.0.8"
-github "omnigraffle", "1.3.0"
-github "macvim",      "1.0.0"
-github "tmux",        "1.0.2"
-github "sourcetree",  "1.0.0"
+github "appcleaner",    "1.0.0"
+github "hipchat",       "1.1.3"
+github "skype",         "1.0.8"
+github "omnigraffle",   "1.3.0"
+github "macvim",        "1.0.0"
+github "tmux",          "1.0.2"
+github "sourcetree",    "1.0.0"
+github "iterm2",        "1.1.2"
+github "sublime_text",  "1.0.1"
+github "java",          "1.5.0"
 
 # jszod/puppet-*
 github "xmind",       "1.0.0", :repo => "jszod/puppet-xmind"

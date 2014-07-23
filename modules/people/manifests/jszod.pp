@@ -20,6 +20,7 @@ class people::jszod {
   include sourcetree
   include sublime_text
   include iterm2::stable
+  include syncplicity
 
   # Ruby configuration
   # ---------------------------------------------

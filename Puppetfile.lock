@@ -134,6 +134,11 @@ GITHUBTARBALL
     xquartz (1.1.1)
 
 GITHUBTARBALL
+  remote: jszod/puppet-syncplicity
+  specs:
+    syncplicity (0.1.0)
+
+GITHUBTARBALL
   remote: jszod/puppet-xmind
   specs:
     xmind (1.0.0)
@@ -182,6 +187,7 @@ DEPENDENCIES
   stdlib (= 4.2.1)
   sublime_text (= 1.0.1)
   sudo (= 1.0.0)
+  syncplicity (= 0.1.0)
   tmux (= 1.0.2)
   xmind (= 1.0.0)
   xquartz (= 1.1.1)

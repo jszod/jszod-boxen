@@ -71,4 +71,5 @@ github "sublime_text",  "1.0.1"
 github "java",          "1.5.0"
 
 # jszod/puppet-*
-github "xmind",       "1.0.0", :repo => "jszod/puppet-xmind"
+github "xmind",       "1.0.0",  :repo => "jszod/puppet-xmind"
+github "syncplicity", "0.1.0",  :repo => "jszod/puppet-syncplicity"

@@ -1,5 +1,5 @@
 # 
-# Sublime text settings specific for Joe Szod (jszod)
+# Sublime Text settings specific for Joe Szod (jszod)
 #
 class people::jszod::sublime_text {
 
@@ -12,4 +12,8 @@ class people::jszod::sublime_text {
     owner   => $::boxen_user,
     mode    => '0755'
   }
+
+
 }
+
+

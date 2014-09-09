@@ -6,7 +6,7 @@ class people::jszod::applications {
   include 'appcleaner'
   include 'hipchat'
   include 'skype'
-##  include 'omnigraffle'
+  include 'omnigraffle'
   include 'macvim'
   include 'tmux'
   include 'java'

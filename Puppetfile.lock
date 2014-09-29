@@ -185,7 +185,7 @@ DEPENDENCIES
   skype (~> 1.0)
   sourcetree (~> 1.0)
   stdlib (= 4.2.1)
-  sublime_text (~> 1.0)
+  sublime_text (~> 1.0.1)
   sudo (= 1.0.0)
   syncplicity (~> 0.1.0)
   tmux (~> 1.0)

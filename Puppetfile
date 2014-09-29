@@ -67,7 +67,7 @@ github "macvim",        "~> 1.0"
 github "omnigraffle",   "~> 1.3.1"
 github "skype",         "~> 1.0"
 github "sourcetree",    "~> 1.0"
-github "sublime_text",  "~> 1.0"
+github "sublime_text",  "~> 1.0.1"
 github "tmux",          "~> 1.0"
 
 # jszod/puppet-*

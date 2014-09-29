@@ -13,7 +13,12 @@ class people::jszod::sublime_text {
     mode    => '0755'
   }
 
+  # Packages
+  sublime_text::package { 'Markdown-Preview':
+    source => 'revolunet/sublimetext-markdown-preview'
+  }
+
+  sublime_text::package { 'Monokai Extended':
+    source => 'jonschlinkert/sublime-monokai-extended'
 
 }
-
-

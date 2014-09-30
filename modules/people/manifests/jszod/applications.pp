@@ -14,5 +14,6 @@ class people::jszod::applications {
   include 'sourcetree'
   include 'iterm2::stable'
   include 'syncplicity'
+  include 'astah_community'
 
 } 

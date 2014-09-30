@@ -1,3 +1,8 @@
+PATH
+  remote: /Users/szodfj/src/boxen/puppet-astah_community
+  specs:
+    astah_community (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-appcleaner
   specs:
@@ -134,11 +139,6 @@ GITHUBTARBALL
     xquartz (1.1.1)
 
 GITHUBTARBALL
-  remote: jszod/puppet-astah_community
-  specs:
-    astah_community (0.1)
-
-GITHUBTARBALL
   remote: jszod/puppet-syncplicity
   specs:
     syncplicity (0.1.0)
@@ -165,7 +165,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   appcleaner (~> 1.0)
-  astah_community (= 0.1)
+  astah_community (>= 0)
   boxen (= 3.6.1)
   dnsmasq (= 1.0.1)
   foreman (= 1.2.0)

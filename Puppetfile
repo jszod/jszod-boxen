@@ -73,4 +73,6 @@ github "tmux",           "~> 1.0"
 # jszod/puppet-*
 github "xmind",           "~> 1.0.0",  :repo => "jszod/puppet-xmind"
 github "syncplicity",     "~> 0.1.0",  :repo => "jszod/puppet-syncplicity"
-#github "astah_community", "0.1",       :repo => "jszod/puppet-astah_community"
+
+# Modules under local development
+dev "astah_community", :path => "~/src/boxen/puppet-astah_community"

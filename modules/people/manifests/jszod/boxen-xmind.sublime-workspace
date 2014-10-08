@@ -1,0 +1,401 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Searching 5261 files for \"xmind\"\n\n/Users/szodfj/src/boxen/puppet-xmind/README.md:\n    1  # Template Puppet Module for Boxen\n    2  \n    3: Installs [XMind](http://www.xmind.net), a  mind mapping applicaion for Mac OS X.\n    4  \n    5: [![Build Status](https://travis-ci.org/jszod/puppet-xmind.png)](https://travis-ci.org/jszod/puppet-xmind#)\n    6  \n    7  ## Usage\n    8  \n    9  ```puppet\n   10: include xmind\n   11  ```\n   12  \n\n/Users/szodfj/src/boxen/puppet-xmind/manifests/init.pp:\n    1: # Public: Install XMind to /Applications\n    2  #\n    3  # Examples\n    4  #\n    5: #   include xmind\n    6: class xmind {\n    7:   package { 'Xmind':\n    8      provider  => 'appdmg_eula',\n    9:     source    => 'http://www.xmind.net/xmind/downloads/xmind-macosx-3.4.1.201401221918.dmg'\n   10    }\n   11  }\n\n/Users/szodfj/src/boxen/puppet-xmind/spec/classes/xmind_spec.rb:\n    3  # Check other boxen modules for examples\n    4  # or read http://rspec-puppet.com/tutorial/\n    5: describe 'xmind' do\n    6:   it { should contain_class('Xmind') }\n    7:   it { should contain_package('Xmind').with_provider('appdmg_eula') }\n    8:   it { should contain_package('Xmind').with_source('http://www.xmind.net/xmind/downloads/xmind-macosx-3.4.1.201401221918.dmg') }\n    9  end\n   10  \n\n19 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 1301,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/Users/szodfj/src/boxen/puppet-xmind/manifests/init.pp",
+			"settings":
+			{
+				"buffer_size": 239,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/szodfj/src/boxen/puppet-xmind/spec/fixtures/Puppetfile",
+			"settings":
+			{
+				"buffer_size": 135,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"set r",
+				"Set Syntax: Ruby"
+			],
+			[
+				"Set",
+				"Set Syntax: Ruby"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"ma",
+				"Markdown Preview: Preview in Browser"
+			]
+		],
+		"width": 413.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/szodfj/src/boxen/puppet-xmind",
+		"/Users/szodfj/src/boxen/puppet-xmind/manifests"
+	],
+	"file_history":
+	[
+		"/Users/szodfj/EMC-Archive/Notes/# Scratch.md",
+		"/Users/szodfj/Library/Application Support/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/Users/szodfj/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/opt/boxen/repo/manifests/site.pp",
+		"/Users/szodfj/EMC-Archive/Notes/# Omnyx Opportunity",
+		"/Users/szodfj/Archive/Gondolatok/2014_September.md",
+		"/Users/szodfj/EMC-Archive/Notes/# Interview Jason Losh.md",
+		"/Users/szodfj/EMC-Archive/Projects/DevOps Advisory/# DevOps Pilots",
+		"/Users/szodfj/EMC-Archive/Notes/# DevOps Advisory - Sprint Review",
+		"/Users/szodfj/EMC-Archive/Projects/DevOps Advisory/# DevOps Training deck",
+		"/Users/szodfj/Archive/Gondolatok/2014_August.md",
+		"/Users/szodfj/EMC-Archive/Notes/# Michael Wagner.md",
+		"/Users/szodfj/EMC-Archive/Projects/DevOps Advisory/# DevOps Maturity.md",
+		"/Users/szodfj/EMC-Archive/Projects/DevOps Advisory/# DevOps Training.md",
+		"/Users/szodfj/EMC-Archive/Notes/# Interview Jeet Shangrai.md",
+		"/Users/szodfj/EMC-Archive/Notes/# Interview Sunil Mehrota",
+		"/opt/boxen/repo/modules/people/manifests/jszod/# DevOps Pilot Pilot Jira configuration",
+		"/Users/szodfj/EMC-Archive/Notes/# APPS WG Leadeship call",
+		"/Users/szodfj/EMC-Archive/Notes/SNC.md",
+		"/opt/boxen/repo/modules/people/manifests/jszod/sublime_text.pp",
+		"/Users/szodfj/EMC-Archive/Notes/BOA.md",
+		"/Users/szodfj/EMC-Archive/Notes/Learning Paths.md"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"xmind"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1301,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										149,
+										154
+									],
+									[
+										167,
+										172
+									],
+									[
+										287,
+										292
+									],
+									[
+										334,
+										339
+									],
+									[
+										406,
+										411
+									],
+									[
+										513,
+										518
+									],
+									[
+										591,
+										596
+									],
+									[
+										610,
+										615
+									],
+									[
+										638,
+										643
+									],
+									[
+										721,
+										726
+									],
+									[
+										731,
+										736
+									],
+									[
+										747,
+										752
+									],
+									[
+										986,
+										991
+									],
+									[
+										1032,
+										1037
+									],
+									[
+										1080,
+										1085
+									],
+									[
+										1157,
+										1162
+									],
+									[
+										1189,
+										1194
+									],
+									[
+										1199,
+										1204
+									],
+									[
+										1215,
+										1220
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								452,
+								452
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/szodfj/src/boxen/puppet-xmind/manifests/init.pp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/szodfj/src/boxen/puppet-xmind/spec/fixtures/Puppetfile",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"project": "boxen-xmind.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -59,6 +59,8 @@ github "xquartz",     "1.2.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 github "appcleaner",     "~> 1.0"
+github "erlang",         "~> 1.0.2"
+github "elixir",         "~> 0.0.1"
 github "hipchat",        "~> 1.1"
 github "iterm2",         "~> 1.1"
 github "java",           "~> 1.5"

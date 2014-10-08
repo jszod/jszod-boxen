@@ -4,6 +4,8 @@
 class people::jszod::applications {
   
   include 'appcleaner'
+  include 'elixir'
+  include 'erlang'
   include 'hipchat'
   include 'skype'
   include 'omnigraffle'

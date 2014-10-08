@@ -21,4 +21,8 @@ class people::jszod::sublime_text {
   sublime_text::package { 'Monokai Extended':
     source => 'jonschlinkert/sublime-monokai-extended'
 
+  sublime_text::package { 'Dayle-Rees-Color-Schemes':
+    source => 'daylerees/colour-schemes'
+  }
+
 }

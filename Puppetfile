@@ -58,18 +58,20 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-
-github "appcleaner",    "~> 1.0"
-github "hipchat",       "~> 1.1"
-github "iterm2",        "~> 1.1"
-github "java",          "~> 1.5"
-github "macvim",        "~> 1.0"
-github "omnigraffle",   "~> 1.3.1"
-github "skype",         "~> 1.0"
-github "sourcetree",    "~> 1.0"
-github "sublime_text",  "~> 1.0.1"
-github "tmux",          "~> 1.0"
+github "appcleaner",     "~> 1.0"
+github "hipchat",        "~> 1.1"
+github "iterm2",         "~> 1.1"
+github "java",           "~> 1.5"
+github "macvim",         "~> 1.0"
+github "omnigraffle",    "~> 1.3.1"
+github "skype",          "~> 1.0"
+github "sourcetree",     "~> 1.0"
+github "sublime_text",   "~> 1.0.1"
+github "tmux",           "~> 1.0"
 
 # jszod/puppet-*
-github "xmind",       "~> 1.0.0",  :repo => "jszod/puppet-xmind"
-github "syncplicity", "~> 0.1.0",  :repo => "jszod/puppet-syncplicity"
+github "xmind",           "~> 1.0.0",  :repo => "jszod/puppet-xmind"
+github "syncplicity",     "~> 0.1.0",  :repo => "jszod/puppet-syncplicity"
+
+# Modules under local development
+#dev "astah_community", :path => "~/src/boxen/puppet-astah_community"

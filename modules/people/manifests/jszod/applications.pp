@@ -17,5 +17,6 @@ class people::jszod::applications {
   include 'iterm2::stable'
   include 'syncplicity'
   #include 'astah_community'
+  include 'xquartz'
 
 } 

@@ -60,7 +60,7 @@ class people::jszod::dotfiles {
   file { "${home}/.iex.exs":
     ensure => link,
     target => "$dotfiles_dir/iex.exs",
-    require => Repository[$dotfile_dir]
+    require => Repository[$dotfiles_dir]
   }
 
 }

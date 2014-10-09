@@ -25,6 +25,7 @@ class people::jszod::dotfiles {
     require => Repository[$dotfiles_dir]
   }
 
+  # Vim
   file { "${home}/.vim":
     ensure  => link,
     force   => true,   # Overwrite if the directory alread exists
@@ -46,13 +47,20 @@ class people::jszod::dotfiles {
     require => Repository[$dotfiles_dir]
   }
 
-  # tmuxinator
+  # tmuxinator direcotry
   file { "${home}/.tmuxinator":
     ensure  => link,
-    force   => true,
-    backup  => false,
+    force   => true,  # Overwrite if the directory already exists
+    backup  => false, # Don't backup directory if it already exists
     target  => "${dotfiles_dir}/tmuxinator}",
     require => Repository[$dotfiles_dir]
+  }
+
+  # elixir
+  file { "${home}/.iex.exs":
+    ensure => link,
+    target => "$dotfiles_dir/iex.exs",
+    require => Repository[$dotfile_dir]
   }
 
 }

@@ -9,7 +9,7 @@ class people::jszod::applications {
   include 'hipchat'
   include 'skype'
   include 'omnigraffle'
-  include 'macvim'
+  include 'macvim'        # Vim packages maintained in .vimrc via vundle
   include 'tmux'
   include 'java'
   include 'xmind'

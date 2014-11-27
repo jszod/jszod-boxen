@@ -26,4 +26,11 @@ class people::jszod::ruby {
     ruby_version  => '*',
   }
 
+  # redcarpet gem in installed for all rubies
+  ruby_gem { 'redcarpet for all rubies':
+    gem           => 'redcarpet',
+    version       => '~> 3.1.2',
+    ruby_version  => '*',
+  }
+
 }

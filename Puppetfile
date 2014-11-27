@@ -71,9 +71,13 @@ github "sourcetree",     "~> 1.0"
 github "sublime_text",   "~> 1.0.1"
 github "tmux",           "~> 1.0"
 
+# Modules not from the boxen repo
+
 # jszod/puppet-*
-github "xmind",           "~> 1.0.0",  :repo => "jszod/puppet-xmind"
-github "syncplicity",     "~> 0.1.0",  :repo => "jszod/puppet-syncplicity"
+github "xmind",           "~> 1.1.0",   :repo => "jszod/puppet-xmind"
+#github "syncplicity",     "~> 0.1.0",  :repo => "jszod/puppet-syncplicity"
+github "gitflow",         "~> 1.0.0",   :repo => "jszod/puppet-gitflow"
 
 # Modules under local development
 #dev "astah_community", :path => "~/src/boxen/puppet-astah_community"
+#dev "gitflow", :path => "~/src/boxen/puppet-gitflow"

@@ -144,14 +144,14 @@ GITHUBTARBALL
     xquartz (1.2.1)
 
 GITHUBTARBALL
-  remote: jszod/puppet-syncplicity
+  remote: jszod/puppet-gitflow
   specs:
-    syncplicity (0.1.0)
+    gitflow (1.0.0)
 
 GITHUBTARBALL
   remote: jszod/puppet-xmind
   specs:
-    xmind (1.0.0)
+    xmind (1.1.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -177,6 +177,7 @@ DEPENDENCIES
   foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.5.0)
+  gitflow (~> 1.0.0)
   go (= 1.1.0)
   hipchat (~> 1.1)
   homebrew (= 1.9.5)
@@ -199,8 +200,7 @@ DEPENDENCIES
   stdlib (= 4.2.1)
   sublime_text (~> 1.0.1)
   sudo (= 1.0.0)
-  syncplicity (~> 0.1.0)
   tmux (~> 1.0)
-  xmind (~> 1.0.0)
+  xmind (~> 1.1.0)
   xquartz (= 1.2.1)
 

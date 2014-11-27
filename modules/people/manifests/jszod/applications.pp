@@ -15,8 +15,9 @@ class people::jszod::applications {
   include 'xmind'
   include 'sourcetree'
   include 'iterm2::stable'
-  include 'syncplicity'
+#  include 'syncplicity'
   #include 'astah_community'
   include 'xquartz'
+  include 'gitflow'
 
 } 

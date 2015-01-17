@@ -2,7 +2,7 @@
 # Applications specific to Joe Szod (jszod)
 #
 class people::jszod::applications {
-  
+
   include 'appcleaner'
   include 'elixir'
   include 'erlang'
@@ -20,4 +20,4 @@ class people::jszod::applications {
   include 'xquartz'
   include 'gitflow'
 
-} 
+}

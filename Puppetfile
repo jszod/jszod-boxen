@@ -75,7 +75,7 @@ github "tmux",           "~> 1.0"
 # Modules not from the boxen repo
 
 # jszod/puppet-*
-`github "xmind",           "~> 1.1.0",   :repo => "jszod/puppet-xmind"
+github "xmind",           "~> 1.1.0",   :repo => "jszod/puppet-xmind"
 #github "syncplicity",     "~> 0.1.0",  :repo => "jszod/puppet-syncplicity"
 github "gitflow",         "~> 1.0.0",   :repo => "jszod/puppet-gitflow"
 

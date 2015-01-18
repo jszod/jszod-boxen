@@ -14,6 +14,7 @@ class people::jszod::applications {
   include 'macvim'        # Vim packages maintained in .vimrc via vundle
   include 'omnigraffle'
   include 'sourcetree'
+  include 'spotify'
   include 'skype'
   include 'tmux'
   include 'xmind'

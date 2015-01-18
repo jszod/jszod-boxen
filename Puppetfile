@@ -2,7 +2,7 @@
 #
 # It works a lot like Bundler. We provide some core modules by
 # default. This ensures at least the ability to construct a basic
-# environment.  
+# environment.
 # Shortcut for a module from GitHub's boxen organization
 def github(name, *args)
   options ||= if args.last.is_a? Hash
@@ -67,6 +67,7 @@ github "iterm2",         "~> 1.2.4"
 github "java",           "~> 1.8.0"
 github "macvim",         "~> 1.0"
 github "omnigraffle",    "~> 1.3.1"
+github "spotify",        "~> 1.0.2"
 github "skype",          "~> 1.1.0"
 github "sourcetree",     "~> 1.0"
 github "sublime_text",   "~> 1.0.1"

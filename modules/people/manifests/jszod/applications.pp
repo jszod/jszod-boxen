@@ -7,18 +7,17 @@ class people::jszod::applications {
   include 'brewcask'
   include 'elixir'
   include 'erlang'
+  include 'gitflow'
   include 'hipchat'
-  include 'skype'
-  include 'omnigraffle'
-  include 'macvim'        # Vim packages maintained in .vimrc via vundle
-  include 'tmux'
-  include 'java'
-  include 'xmind'
-  include 'sourcetree'
   include 'iterm2::stable'
+  include 'java'
+  include 'macvim'        # Vim packages maintained in .vimrc via vundle
+  include 'omnigraffle'
+  include 'sourcetree'
+  include 'skype'
+  include 'tmux'
+  include 'xmind'
 #  include 'syncplicity'
   #include 'astah_community'
   include 'xquartz'
-  include 'gitflow'
-
 }

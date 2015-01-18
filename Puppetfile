@@ -63,14 +63,14 @@ github "appcleaner",     "~> 1.0"
 #github "erlang",         "~> 1.0.2" switched to jszod version w/update Erlang version
 github "elixir",         "~> 0.0.1"
 github "hipchat",        "~> 1.1"
-github "iterm2",         "~> 1.1"
-github "java",           "~> 1.5"
+github "iterm2",         "~> 1.2.4"
+github "java",           "~> 1.8.0"
 github "macvim",         "~> 1.0"
 github "omnigraffle",    "~> 1.3.1"
-github "skype",          "~> 1.0"
+github "skype",          "~> 1.1.0"
 github "sourcetree",     "~> 1.0"
 github "sublime_text",   "~> 1.0.1"
-github "tmux",           "~> 1.0"
+github "tmux",           "~> 1.0.2"
 
 # Modules not from the boxen repo
 

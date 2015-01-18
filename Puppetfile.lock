@@ -1,3 +1,8 @@
+PATH
+  remote: /Users/szodfj/src/boxen/puppet-erlang
+  specs:
+    puppet-erlang (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-appcleaner
   specs:
@@ -22,11 +27,6 @@ GITHUBTARBALL
   remote: boxen/puppet-elixir
   specs:
     elixir (0.0.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-erlang
-  specs:
-    erlang (1.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -179,7 +179,6 @@ DEPENDENCIES
   brewcask (= 0.0.4)
   dnsmasq (= 2.0.1)
   elixir (~> 0.0.1)
-  erlang (~> 1.0.2)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.7.1)
@@ -199,6 +198,7 @@ DEPENDENCIES
   openssl (= 1.0.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
+  puppet-erlang (>= 0)
   repository (= 2.3.0)
   ruby (= 8.1.7)
   skype (~> 1.0)

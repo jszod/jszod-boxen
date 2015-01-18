@@ -1,3 +1,8 @@
+PATH
+  remote: /Users/szodfj/src/boxen/puppet-xmind
+  specs:
+    puppet-xmind (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-appcleaner
   specs:
@@ -154,11 +159,6 @@ GITHUBTARBALL
     gitflow (1.0.0)
 
 GITHUBTARBALL
-  remote: jszod/puppet-xmind
-  specs:
-    xmind (1.1.0)
-
-GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.1.1)
@@ -199,6 +199,7 @@ DEPENDENCIES
   openssl (= 1.0.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
+  puppet-xmind (>= 0)
   repository (= 2.3.0)
   ruby (= 8.1.7)
   skype (~> 1.1.0)
@@ -207,6 +208,5 @@ DEPENDENCIES
   sublime_text (~> 1.0.1)
   sudo (= 1.0.0)
   tmux (~> 1.0.2)
-  xmind (~> 1.1.0)
   xquartz (= 1.2.1)
 

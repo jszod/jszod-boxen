@@ -4,6 +4,7 @@
 class people::jszod::applications {
 
   include 'appcleaner'
+  include 'brewcask'
   include 'elixir'
   include 'erlang'
   include 'hipchat'

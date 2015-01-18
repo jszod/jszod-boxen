@@ -60,7 +60,7 @@ github "xquartz",     "1.2.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 github "appcleaner",     "~> 1.0"
-github "erlang",         "~> 1.0.2"
+#github "erlang",         "~> 1.0.2" switched to jszod version w/update Erlang version
 github "elixir",         "~> 0.0.1"
 github "hipchat",        "~> 1.1"
 github "iterm2",         "~> 1.1"
@@ -81,4 +81,4 @@ github "gitflow",         "~> 1.0.0",   :repo => "jszod/puppet-gitflow"
 
 # Modules under local development
 #dev "astah_community", :path => "~/src/boxen/puppet-astah_community"
-#dev "gitflow", :path => "~/src/boxen/puppet-gitflow"
+dev "erlang", :path => "~/src/boxen/erlang"

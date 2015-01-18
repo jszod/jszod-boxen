@@ -76,9 +76,8 @@ github "tmux",           "~> 1.0.2"
 
 # jszod/puppet-*
 github "xmind",           "~> 1.1.0",   :repo => "jszod/puppet-xmind"
-#github "syncplicity",     "~> 0.1.0",  :repo => "jszod/puppet-syncplicity"
 github "gitflow",         "~> 1.0.0",   :repo => "jszod/puppet-gitflow"
+github "erlang",          "~> 1.0.0",   :repo => "jszod/puppet-erlang"
 
 # Modules under local development
 #dev "astah_community", :path => "~/src/boxen/puppet-astah_community"
-dev "erlang", :path => "~/src/boxen/erlang"

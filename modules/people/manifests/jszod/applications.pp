@@ -4,6 +4,7 @@
 class people::jszod::applications {
 
   include 'appcleaner'
+  include 'balsamiq_mockups'
   include 'brewcask'
   include 'elixir'
   include 'erlang'

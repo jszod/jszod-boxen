@@ -76,10 +76,11 @@ github "tmux",           "~> 1.0.2"
 # Modules not from the boxen repo
 
 # jszod/puppet-*
-github "erlang",          "~> 1.0.0",   :repo => "jszod/puppet-erlang"
-github "gitflow",         "~> 1.0.0",   :repo => "jszod/puppet-gitflow"
-github "xmind",           "~> 2.1.0",   :repo => "jszod/puppet-xmind"
+github "erlang",            "~> 1.0.0",   :repo => "jszod/puppet-erlang"
+github "balsamiq_mockups",  "~> 1.0.0",   :repo => "jszod/puppet-balsamiq_mockups"
+github "gitflow",           "~> 1.0.0",   :repo => "jszod/puppet-gitflow"
+github "xmind",             "~> 2.1.0",   :repo => "jszod/puppet-xmind"
 #
 # Modules under local development
 #dev "astah_community", :path => "~/src/boxen/puppet-astah_community"
-#dev "xmind",  :path => "~/src/boxen/puppet-xmind"
+#dev "balsamiq_mockups",  :path => "~/src/boxen/puppet-balsamiq_mockup"

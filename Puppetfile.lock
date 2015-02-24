@@ -166,7 +166,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: jszod/puppet-xmind
   specs:
-    xmind (2.1.0)
+    xmind (2.1.1)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
